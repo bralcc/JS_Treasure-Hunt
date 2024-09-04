@@ -1,6 +1,6 @@
 # Treasure Hunt Game
 
-Welcome to the Treasure Hunt Game! This is a simple browser-based game where players navigate a game board to find treasures while avoiding enemies and walls.
+Welcome to the Treasure Hunt Game! This is a simple browser-based game where players navigate a game board to find treasures while avoiding enemies and walls. This is made purely in JavaScript to learn the basics of the language.
 
 ## Table of Contents
 
