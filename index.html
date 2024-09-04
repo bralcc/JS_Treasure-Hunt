@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/index.js" type="module"></script>
+    <title>Treasure Hunt</title>
+</head> 
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Treasure Hunt</h1>
+            <div>
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div id="board">
+                <!-- Script renders here -->
+            </div>
+            <div class="scoreboard">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Treasures found:</td>
+                            <td id="treasuresFound"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 - bralcc - All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

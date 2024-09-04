@@ -1,0 +1,109 @@
+:root {
+    --gunmetal: #11151d;
+    --tomato: #ff6542ff;
+    --licorice: #1f2b3f;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: var(--gunmetal);
+}
+
+h1, #difficulty {
+    text-align: center;
+    margin: 1rem;
+    background-color: var(--licorice);
+    color: var(--tomato);
+    border: solid 1px var(--tomato);
+}
+
+h1 {
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--tomato);
+    color: var(--licorice);
+    margin-top: 2rem;
+}
+
+.container {
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* GAME STYLING */
+
+#board {
+    display: grid;
+    margin-bottom: 1rem;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    gap: 1px;
+    width: 100%;
+}
+
+.cell {
+    width: 100%;
+    padding-top: 100%; /* This creates a square aspect ratio */
+    position: relative;
+}
+
+.cell > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.grass {
+    background-color: var(--licorice);
+}
+
+.enemy {
+    background-color: red;
+}
+
+.player {
+    background-color: blue;
+}
+
+.treasure {
+    background-color: yellow;
+}
+
+.wall {
+    background-color: black;
+    border: 1px solid grey;
+}
+
+@media screen and  (min-width: 768px) {
+    #board {
+        width: 50%;
+    }
+    
+}
